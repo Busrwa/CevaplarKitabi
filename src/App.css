@@ -11,15 +11,32 @@ body {
   color: #ffffff;
   min-height: 100vh;
   overflow-x: hidden;
+  display: flex;
+  /* body’yi flex yap */
+  justify-content: center;
+  /* yatay ortala */
+  align-items: flex-start;
+  /* üstten hizala */
+  padding: 0;
+  margin: 0;
 }
 
-/* Uygulama Layout */
 .app {
   display: flex;
-  min-height: 100vh;
-  position: relative;
+  justify-content: center;
+  /* yatay ortala */
+  align-items: flex-start;
+  /* üstten hizala */
+  width: 100%;
+  /* tam genişlik */
+  max-width: 1200px;
+  /* isteğe bağlı max genişlik */
+  box-sizing: border-box;
+  padding: 20px 0;
 }
 
+
+/* Reklam Alanları */
 /* Reklam Alanları */
 .ad-container {
   width: 160px;
@@ -27,17 +44,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
+  position: fixed;
+  /* sticky yerine fixed */
   top: 20px;
   height: fit-content;
+  z-index: 100;
+  /* içerik üstüne gelmesin */
 }
 
 .ad-left {
-  margin-left: 20px;
+  left: 0;
+  /* sol kenara yapışık */
+  margin-left: 10px;
+  /* biraz boşluk bırak */
 }
 
 .ad-right {
-  margin-right: 20px;
+  right: 0;
+  /* sağ kenara yapışık */
+  margin-right: 10px;
+  /* biraz boşluk bırak */
 }
 
 /* Mobilde reklamları gizle */
@@ -47,24 +73,28 @@ body {
   }
 }
 
+
 /* Ana İçerik */
 .main-content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  /* İçeriği ortala */
+  width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .content-wrapper {
   flex: 1;
   display: flex;
-  align-items: flex-start; /* üst hizaya al */
+  align-items: flex-start;
+  /* üst hizaya al */
   justify-content: center;
   width: 100%;
-  padding: 20px 20px; /* padding azaltıldı */
+  padding: 20px 20px;
+  /* padding azaltıldı */
   margin-top: 20px;
 }
 
@@ -97,7 +127,7 @@ body {
   .header h1 {
     font-size: 2rem;
   }
-  
+
   .header p {
     font-size: 1rem;
   }
@@ -108,7 +138,8 @@ body {
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
-  margin-top: 40px; /* boşluk verildi */
+  margin-top: 40px;
+  /* boşluk verildi */
 }
 
 .book-button-container:hover {
@@ -136,7 +167,7 @@ body {
     width: 250px;
     height: 250px;
   }
-  
+
   .book-button-text {
     font-size: 1rem;
   }
@@ -155,6 +186,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -209,11 +241,11 @@ body {
     padding: 30px 20px;
     min-height: 150px;
   }
-  
+
   .answer-text {
     font-size: 1.2rem;
   }
-  
+
   .try-again-button {
     padding: 12px 30px;
     font-size: 1rem;
@@ -254,23 +286,28 @@ body {
 
 /* Gizlilik Politikası Sayfası */
 .privacy-page {
-  position: fixed;      /* Ekranın tamamını kapla */
+  position: fixed;
+  /* Ekranın tamamını kapla */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-y: auto;     /* Uzun içerik için scroll */
+  overflow-y: auto;
+  /* Uzun içerik için scroll */
   background-color: #121212;
   color: #e0e0e0;
   padding: 40px 20px;
-  z-index: 1000;        /* diğer içeriklerin üstünde */
+  z-index: 1000;
+  /* diğer içeriklerin üstünde */
 }
 
 .privacy-container {
-  max-width: 900px;     /* içerik genişliği */
+  max-width: 900px;
+  /* içerik genişliği */
   width: 100%;
   margin: 0 auto;
-  text-align: left;     /* metinleri sola yasla */
+  text-align: left;
+  /* metinleri sola yasla */
   background: #1f1f1f;
   border-radius: 20px;
   padding: 40px;
@@ -345,7 +382,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   font-size: 0.95rem;
 }

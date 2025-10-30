@@ -88,6 +88,13 @@ http://localhost:xxxx
 - Accept cookies to customize your experience and enable Google AdSense ads  
 
 ### Privacy Policy & Cookies
+<<<<<<< HEAD
 - User data is collected **anonymously** for Google AdSense ads  
 - Personal information is **not shared** with third parties  
 - Cookies are used to enhance user experience  
+=======
+
+* User data is collected anonymously for Google AdSense ads.
+* Personal information is not shared with third parties.
+* Cookies are used to enhance user experience.
+>>>>>>> 586f8ec (Updated adds)
