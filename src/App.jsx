@@ -33,7 +33,7 @@ function App() {
         <>
           {/* Sol Reklam */}
           <div className="ad-container ad-left">
-            <AdSense slot="1234567890" />
+            <AdSense slot="3046799928" />
           </div>
 
           {/* Ana İçerik */}
@@ -59,7 +59,7 @@ function App() {
 
           {/* Sağ Reklam */}
           <div className="ad-container ad-right">
-            <AdSense slot="0987654321" />
+            <AdSense slot="3046799928" />
           </div>
         </>
       ) : (
