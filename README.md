@@ -1,18 +1,112 @@
-# React + Vite
+````markdown
+# Cevaplar Kitabı Online / The Book of Answers Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Türkçe Açıklama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cevaplar Kitabı Online, karar veremediğiniz anlarda size rastgele cevaplar sunan interaktif bir web uygulamasıdır. Klasik "cevaplar kitabı" deneyimini dijital ortamda yaşamanızı sağlar ve Google AdSense reklamları ile gelir elde etme imkanı sunar.
 
-## React Compiler
+### Canlı Demo
+[Canlı site linki ekle]  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Özellikler
+- Rastgele cevap sunan **interaktif kitap butonu**.  
+- **Gizlilik politikası** ve **çerez kabul** modülü.  
+- Google AdSense ile reklam entegrasyonu.  
+- Responsive tasarım (masaüstü ve mobil uyumlu).  
+- React.js ve modern front-end teknolojileri kullanılarak geliştirilmiştir.
 
-Note: This will impact Vite dev & build performances.
+### Kurulum ve Çalıştırma
+1. Depoyu klonlayın:
+```bash
+git clone https://github.com/Busrwa/CevaplarKitabi.git
+cd CevaplarKitabi
+````
 
-## Expanding the ESLint configuration
+2. Bağımlılıkları yükleyin:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+3. Geliştirme sunucusunu başlatın:
+
+```bash
+npm run dev
+```
+
+4. Tarayıcıda açın:
+
+```
+http://localhost:xxxx
+```
+
+### Kullanım
+
+* Ana sayfada “kitap butonu”na tıklayın ve size rastgele bir cevap gelsin.
+* “Tekrar Sor” butonuyla yeni cevap alabilirsiniz.
+* Sayfanın altındaki “Gizlilik Politikası” butonuyla gizlilik politikamıza ulaşabilirsiniz.
+* Çerez kabul butonu ile site deneyimini özelleştirin ve Google AdSense reklamlarını kullanabilirsiniz.
+
+### Gizlilik Politikası ve Çerezler
+
+* Kullanıcı verileri Google AdSense reklamları için anonim olarak toplanır.
+* Kişisel bilgiler üçüncü taraflarla paylaşılmaz.
+* Çerezler kullanıcı deneyimini geliştirmek için kullanılır.
+
+---
+
+## English Description
+
+The Book of Answers Online is an interactive web app that provides random answers when you can’t make a decision. It brings the classic "book of answers" experience to the digital world and allows monetization via Google AdSense ads.
+
+### Features
+
+* Interactive book button providing random answers.
+* Privacy policy and cookie consent module.
+* Ad integration with Google AdSense.
+* Responsive design (desktop & mobile friendly).
+* Built with React.js and modern front-end technologies.
+
+### Installation & Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Busrwa/CevaplarKitabi.git
+cd CevaplarKitabi
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open in your browser:
+
+```
+http://localhost:xxxx
+```
+
+### How to Use
+
+* Click the "book button" on the homepage to get a random answer.
+* Click the "Try Again" button to get a new answer.
+* Use the "Privacy Policy" button at the bottom to view the privacy policy.
+* Accept cookies to customize your experience and enable Google AdSense ads.
+
+### Privacy Policy & Cookies
+
+* User data is collected anonymously for Google AdSense ads.
+* Personal information is not shared with third parties.
+* Cookies are used to enhance user experience.
+
+```
