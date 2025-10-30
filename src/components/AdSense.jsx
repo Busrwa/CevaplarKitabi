@@ -15,7 +15,7 @@ function AdSense({ slot }) {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-8550551222928727" // Buraya kendi publisher ID'nizi yazın
+        data-ad-client="ca-pub-6577326627706746" // Buraya kendi publisher ID'nizi yazın
         data-ad-slot={slot}
         data-ad-format="vertical"
         data-full-width-responsive="false"
